@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body, html{
+            margin: 0;
+            padding: 0;
+        }
+        .all{
+            width: 100%; 
+            height: 100vh; 
+            margin: auto;
+        }
+            /*右邊*/
+        .box_right{
+            width: 375px;
+            height: 588px;
+            display: flex;
+            background-image: url(./背景1.jpg);
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+        }
+        .banner{
+                width: 375px;
+                height: 100%;
+                background-color: black;
+        }
+        .x{
+            width: 375px;
+            height: 196px;
+            transition: 2s;
+            position: relative;
+            left: 0;
+        }
+        .y{
+            width: 375px;
+            height: 196px;
+            transition: 2s;
+            position: relative;
+            left: 0;
+        }
+        .z{
+            width: 375px;
+            height: 196px;
+            transition: 2s;
+            position: relative;
+            left: 0;
+        }
+
+        .box:hover{
+            width: 500px;
+        }
+        .x{
+            background-image: url(./後裔.jpg);
+            background-size: cover;
+            background-position: center ;
+        }
+        .y{
+            background-image: url(./紙防子.jpeg);
+            background-size: cover;
+            background-position: center ;
+        }
+        .z{
+            background-image: url(./絕命讀詩.jpg);
+            background-size: cover;
+            background-position: center ;
+        }
+            /*左邊*/
+        .box_left{
+            width: 375px;
+            height: 80px;
+            background-color: brown;
+            display: flex;
+        }
+        .LOGO{
+            max-width: 54px;
+            margin: auto;
+        }
+        img{
+            width:100%;
+        }
+        ul{
+            color: white;
+            list-style: none;
+            padding: 0;
+            display: flex;
+            margin-right: 100px;
+            
+        }
+        li{
+            margin-left: 100px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:visited{
+            color: rgb(255, 255, 255);
+        }
+        a:hover{
+            color: rgb(8, 8, 8);
+        }
+        a:active{
+            color: violet;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="all">
+        <div class="box_left">
+            <div class="LOGO">
+                <img src="./LOGO.jpg" alt="">
+            </div>
+            <!-- <ul>
+                <a href="https://www.netflix.com/tw/title/80234304" target="_blank"><li>后翼棄兵</li></a>
+                <a href="https://www.netflix.com/tw/Title/80192098" target="_blank"><li>紙房子</li></a>
+                <a href="https://www.netflix.com/tw/title/70143836" target="_blank"><li>絕命毒師</li></a>
+            </ul> -->
+        </div>
+        
+        <div class="box_right">
+            <div class="banner">
+                <div class="box x">
+                </div>
+                <div class="box y">
+                </div>
+                <div class="box z">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

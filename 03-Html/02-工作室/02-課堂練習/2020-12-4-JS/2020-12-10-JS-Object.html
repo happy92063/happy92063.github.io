@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card{
+            width: 400px;
+            height: 600px;
+
+        }
+        .img{
+            width: 100%;
+            height: 60%;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        .btn{
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+        }
+        .text{
+            text-align: center;
+            background-color: gray;
+
+        }
+        .text p{
+            margin: 0;
+            padding: 10px;
+        }
+        .img_group{
+            display:flex
+        }
+    </style>
+</head>
+<body>
+    <div class="img_group">
+    </div>
+    <div class="btn"></div>
+    
+    <script>
+        var coco = {
+            avatar:"https://d20aeo683mqd6t.cloudfront.net/zh-hant/articles/title_images/000/038/156/original/pixta_2648354_S.jpg?2017&d=750x400",
+            gender: "male",
+            age: "10",
+            height: "100",
+            weight: "50"
+        }
+
+        var btn = document.querySelector(".btn")
+        var area = document.querySelector(".img_group")
+
+        btn.onclick=function(){
+            area.innerHTML +=
+                    `<div class="card">
+                <div class="img">
+                    <img src="${coco.avatar}" alt="">
+                </div>
+                <div class="text">
+                    <p>gender: ${coco.gender}</p>
+                    <p>age: ${coco.age}</p>
+                    <p>height: ${coco.height}</p>
+                    <p>weight: ${myClassmate.weight}</p>
+                </div>
+            </div>`
+        }
+         var myClassmate =[
+             {
+                avatar:"https://tnimage.s3.hicloud.net.tw/photos/2019/05/23/1558582006-5ce612f62b305.jpg",
+                name:"coco",
+                gender:"famale",
+                age:"30",
+                height:"50",
+                weight:"60"
+             },
+             {
+                avatar:"https://storage.googleapis.com/cw-com-tw/article/201804/article-5ae34297bc504.jpg",
+                name:"koko",
+                gender:"male",
+                age:"40",
+                height:"50",
+                weight:"60"
+             },
+             {
+                avatar:"https://sci101.news/wp-content/uploads/2019/05/669a4fce1372771a6e503bcc68f819f9.jpg",
+                name:"bobo",
+                gender:"famale",
+                age:"50",
+                height:"60",
+                weight:"70"
+             }
+         ]
+
+        myClassmate.forEach(element => {
+            area.innerHTML +=
+                    `<div class="card">
+                <div class="img">
+                    <img src="${element.avatar}" alt="">
+                </div>
+                <div class="text">
+                    <p>gender: ${element.gender}</p>
+                    <p>age: ${element.age}</p>
+                    <p>height: ${element.height}</p>
+                    <p>weight: ${element.weight}</p>
+                </div>
+            </div>`
+         });
+
+
+        
+
+    </script>
+</body>
+</html>

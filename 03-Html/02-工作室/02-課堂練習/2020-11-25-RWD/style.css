@@ -1,0 +1,39 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+* {
+    box-sizing: border-box;
+}
+.all{
+    max-width: 1200px;
+}
+.banner{
+    width: 1200px;
+    height: 30vh;
+    background-color: rgb(140, 197, 33);
+    text-align: center;
+    font-size: 72px;
+}
+
+.box{
+    width: 33.33%;
+    height: 10vh;
+    border: 1px solid black;
+    float: left;
+}
+.g, .h{
+    width: 50%;
+    height: 10vh;
+}
+
+@media screen and (max-width:1200px){
+    .a,.b,.c,.d,.e,.f{
+        width: 50%;
+    }
+}
+@media screen and (max-width:756px){
+    .box{
+        width: 100%;
+    }
+}

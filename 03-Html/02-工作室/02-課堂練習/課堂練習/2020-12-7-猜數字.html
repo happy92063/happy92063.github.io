@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>猜數字遊戲</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        h1 {
+            margin: 0;
+            text-align: center;
+        }
+
+        .main {
+            width: 100%;
+            height: 100vh;
+            background-color: cornsilk;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .gameCanvas {
+            width: 600px;
+            height: 400px;
+            background-color: rgb(160, 160, 160);
+            border: 5px solid gray;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        input {
+            width: 400px;
+            height: 35px;
+            text-align: center;
+            border-radius: 5px;
+            margin: 50px 0;
+        }
+
+        #btn {
+            width: 200px;
+            height: 50px;
+            background-color: ivory;
+            text-align: center;
+            line-height: 50px;
+            font-size: 24px;
+            font-weight: 900;
+            transition: .3s;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        #btn:hover {
+            background-color: rgb(26, 26, 24);
+            color: white;
+        }
+
+        #btn:active {
+            transition: .1s;
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="gameCanvas">
+            <h1>猜數字遊戲 (0~100之間)</h1>
+            <input id="ipt" type="number">
+            <div id="btn">送出答案</div>
+        </div>
+    </div>
+
+    <script>
+        var btn = document.querySelector("#btn")
+        var ipt = document.querySelector("#ipt")
+
+        var ans = Math.floor(Math.random() * 101 );
+        console.log(ans);
+
+        btn.onclick = function () {
+            if( ipt.value < 0 || ipt.value > 100 ){
+                alert("請輸入0~100數字");
+            }else{
+                if( ipt.value == ans ){
+                    alert("恭喜答對!!!");
+                }else{
+                    if( ipt.value > ans ){
+                        alert("太大了");
+                    }else{
+                        alert("太小了");
+                    }
+                }
+            }
+        }
+        
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: cadetblue;
+            transition: 1s;
+            float: left;
+        }
+
+        .remore{
+            width: 50px;
+            height: 50px;
+            background-color: coral;
+            float: left;
+            opacity: 0;
+            transition: 1s;
+        }
+        .clear{
+            clear: both;
+        }
+        .active{
+            width: 300px;
+            height: 300px;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="remore"></div>
+    <div class="clear"></div>
+    <script>
+        var btn = document.querySelector(".box");
+        btn.onclick = function(){
+            btn.classList.add("active");
+            remore.classList.add("active");
+        }
+        var remore = document.querySelector(".remore");
+        remore.onclick = function(){
+           btn.classList.remove("active");
+           remore.classList.remove("active");
+        }
+    </script>
+</body>
+</html>

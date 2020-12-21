@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.css" integrity="sha512-1No3nMY/zD37h1POyqULfwc9WMzWvXcal6F7/OIhNdWkTaEbt4Y6eqX0vXail7Zh5JjnBdMMKr+lRvqTNFr3Ow==" crossorigin="anonymous" />
+    <style>
+        .page {
+            width: 100%;
+            height: 100%;
+        }
+
+        .bg-gray {
+            background-color: gray;
+        }
+
+        .bg-red {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="fullpage">
+        <div class="section">
+            <div class="page bg-gray">1</div>
+        </div>
+        <div class="section">
+            <div class="slide">
+                <div class="page bg-red">2-1</div>
+            </div>
+            <div class="slide">
+                <div class="page bg-gray">2-2</div>
+            </div>
+            <div class="slide">
+                <div class="page bg-red">2-3</div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="page bg-gray">3</div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.js" integrity="sha512-eH2N2Zt2AeLuFlFvRSEeZcVeAESY+8nfIqhxx0XXEou6w/G4lLY3K8UKNYqi6e1pLXDduVF1KF/lbyxy3+X6OA==" crossorigin="anonymous"></script>
+    <script>
+        new fullpage('#fullpage', {
+            //options here
+            autoScrolling: true,
+            scrollHorizontally: true,
+            scrollingSpeed: 700,
+            navigation: true,
+
+
+        });
+
+        //methods
+        fullpage_api.setAllowScrolling(true);
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 5000px;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: blanchedalmond;
+            position: fixed;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" ></div>
+    <script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
+    <script>
+        window.onload = function () {
+          lax.init()
+      
+          // Add a driver that we use to control our animations
+          lax.addDriver('scrollY', function () {
+            return window.scrollY
+          })
+      
+          // Add animation bindings to elements
+          lax.addElements('.box', {
+            scrollY: {
+              translateX: [
+                [ 100, 500, 1000],
+                [ 0, 500, 1800],
+              ],
+              rotate: [
+                [0, 500],
+                [0, 360],
+              ],
+              scale:[
+                  [0, 500,1800],
+                  [0, 5, 10],
+              ],
+              opacity:[
+                  [0,1000],
+                  [1,0],
+              ]
+            }
+          })
+        }
+      </script>
+</body>
+</html>

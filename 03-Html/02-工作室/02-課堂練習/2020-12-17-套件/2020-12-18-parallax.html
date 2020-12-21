@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* 簡單版parallax */
+
+        /* body{
+            height: 5000px;
+        }
+        .parallax-window {
+            min-height: 1000px;
+            background: transparent;
+} */
+    #scene{
+        width: 1000px;
+        height:500px;
+        margin: auto;
+        background-color: gray;
+    }
+    
+    .box{
+        width: 100px;
+        height: 100px;
+    }
+
+    .b{
+        background-color: blue;
+    }
+    .r{
+        background-color: red;
+    }
+
+    </style>
+</head>
+<body>
+
+    <div id="scene">
+        <div data-depth="0.2"><div class="box b"></div></div>
+        <div data-depth="0.8"><div class="box r"></div></div>
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script>
+        var scene = document.getElementById('scene');
+        var parallaxInstance = new Parallax(scene);
+    </script>
+   
+   
+   
+    
+   
+   
+   
+   
+   
+   
+   
+      <!-- 簡單版parallax -->
+
+    <!-- <div class="parallax-window" data-parallax="scroll" data-image-src="https://static.betweengos.com/wp-content/uploads/2017/09/lifestyle-dogs-you-should-follow-on-instagram-cover-2-700x506.jpg"></div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="/path/to/parallax.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax.js/1.5.0/parallax.js" integrity="sha512-5Pv5QdhmTB8oLr28Vs22tMM1hrLXkLLfi6GybfOzbe3QV/dnj3+ybvjUx1FfXKJygnXYbN9Oxzmk20AbltrIhA==" crossorigin="anonymous"></script> -->
+
+
+
+ 
+</body>
+</html>
