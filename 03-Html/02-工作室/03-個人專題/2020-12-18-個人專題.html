@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人專題</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    
+</head>
+<body>
+    <!-- nav_bar -->
+    <nav class="d-flex fixed-top">
+      <ul class="nav m-auto">
+          <li class="nav-item h3 mr-3 border-right mt-3">
+            <a class="nav-link active " href="#">關於打鐵</a>
+          </li>
+          <li class="nav-item h3 mr-3 border-right mt-3">
+            <a class="nav-link" href="#">社群回饋 </a>
+          </li>
+          <li class="nav-item h3 mr-3 border-right mt-3">
+            <a class="nav-link" href="#">最新消息</a>
+          </li>
+          <li class="nav-item h3 mr-3 border-right mt-3">
+              <a class="nav-link" href="#">打鐵菜單</a>
+            </li>
+          <li class="nav-item h3 mr-3 border-right mt-3">
+              <a class="nav-link" href="#">打鐵據點</a>
+            </li>
+          <li class="nav-item h3 mr-3 mt-3">
+            <a class="nav-link" href="#">加盟打鐵</a>
+          </li>
+        </ul>
+    </nav>
+
+    <!-- banner -->
+    <section>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./img/banner.img/封面照1.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/banner.img/店面照.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/banner.img/店面照2.jpg" alt="">
+          </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+
+    <!-- swiper -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    </script>
+
+    <!-- bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+</html>
