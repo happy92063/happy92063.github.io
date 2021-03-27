@@ -1,0 +1,192 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  background-color: #f53b57;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body .nav {
+  position: relative;
+  width: 350px;
+  height: 70px;
+  background-color: #fff;
+  border-radius: 35px;
+  -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+}
+
+body .nav ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .nav ul .indicator {
+  position: absolute;
+  left: 0;
+  width: 70px;
+  height: 70px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body .nav ul .indicator::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: #333;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body .nav ul li {
+  position: relative;
+  list-style: none;
+  width: 70px;
+  height: 70px;
+  z-index: 1;
+}
+
+body .nav ul li.active .icon, body .nav ul li :hover .icon {
+  color: #fff;
+}
+
+body .nav ul li:hover .title {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+}
+
+body .nav ul li:nth-child(1).active ~ .indicator {
+  -webkit-transform: translateX(calc(70px * 0));
+          transform: translateX(calc(70px * 0));
+}
+
+body .nav ul li:nth-child(2).active ~ .indicator {
+  -webkit-transform: translateX(calc(70px * 1));
+          transform: translateX(calc(70px * 1));
+}
+
+body .nav ul li:nth-child(3).active ~ .indicator {
+  -webkit-transform: translateX(calc(70px * 2));
+          transform: translateX(calc(70px * 2));
+}
+
+body .nav ul li:nth-child(4).active ~ .indicator {
+  -webkit-transform: translateX(calc(70px * 3));
+          transform: translateX(calc(70px * 3));
+}
+
+body .nav ul li:nth-child(5).active ~ .indicator {
+  -webkit-transform: translateX(calc(70px * 4));
+          transform: translateX(calc(70px * 4));
+}
+
+body .nav ul li:nth-child(1).active ~ .indicator::before {
+  background: #f53b57;
+}
+
+body .nav ul li:nth-child(2).active ~ .indicator::before {
+  background: #3c40c6;
+}
+
+body .nav ul li:nth-child(3).active ~ .indicator::before {
+  background: #05c46b;
+}
+
+body .nav ul li:nth-child(4).active ~ .indicator::before {
+  background: #0fbcf9;
+}
+
+body .nav ul li:nth-child(5).active ~ .indicator::before {
+  background: #ffa801;
+}
+
+body .nav ul li a {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  text-align: center;
+  color: #333;
+  font-weight: bold;
+}
+
+body .nav ul li a .icon {
+  position: relative;
+  display: block;
+  line-height: 75px;
+  text-align: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body .nav ul li a .icon .fa {
+  font-size: 24px;
+}
+
+body .nav ul li a .title {
+  position: absolute;
+  top: -70px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 15%);
+          transform: translate(-50%, 15%);
+  background: #fff;
+  width: auto;
+  padding: 5px 10px;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+body .nav ul li a .title::before {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: #fff;
+  bottom: -8px;
+  left: 48%;
+  -webkit-transform: rotate(45deg) translateX(-50%);
+          transform: rotate(45deg) translateX(-50%);
+  border-radius: 2px;
+}
+/*# sourceMappingURL=style.css.map */
