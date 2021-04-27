@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="">
+        <!-- text -->
+        <label for="text">名子:</label>
+        <input id='text' type="text" name='name' required>
+        <br>
+        
+        <!-- number -->
+        <label for="age">年紀:</label>
+        <input id='age' type="number" name='age' required>
+        <br>
+
+        <!-- password -->
+        <label for="pass">密碼:</label>
+        <input id='pass' type="password" name='pass' required minlength="8" maxlength="50">
+        <br>
+        
+        <!-- radio -->
+        <input id='male' type="radio" name='gender' value="male">
+        <label for="male">男性</label>
+        <input id='female' type="radio" name='gender'value="female" checked required>
+        <label for="female">女性</label>
+        <br>
+
+        <!-- select -->
+        <label for="interent">興趣:</label>
+        <select name="interent" id="interent">
+            <option value="跑步">跑步</option>
+            <option value="游泳">游泳</option>
+            <option value="跳舞">跳舞</option>
+        </select>
+        <br>
+        
+        <!-- email -->
+        <label for="email">信箱</label>
+        <input id='email' type="email" name='email'>
+        <br>
+
+        <!-- checkbox -->
+        <input id='new' type="checkbox" name='new' value="new">
+        <label for="new">訂閱最新消息</label>
+        <br>
+
+        <!-- range -->
+        0<input id='range' type="range" name='range' step="5" min="0" max="100">100
+        <br>
+        <button type="submit">送出</button>
+        <br>
+
+        <!-- datalist -->
+        <label for="dataList">地區:</label>
+        <input type="text" id="dataList" list="area" name="dataList">
+        <datalist id="area">
+            <option value="彰化">彰化</option>
+            <option value="鹿港">鹿港</option>
+            <option value="和美">和美</option>
+        </datalist>
+        <br>
+
+        <!-- textarea  -->
+        <label for="tall">想說的話:</label>
+        <br>
+        <textarea name="tall" id="tall" cols="30" rows="10"></textarea>
+    </form>
+</body>
+</html>

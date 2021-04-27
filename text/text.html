@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        <div class="wrap">
+	<div class="row">
+		<div class="pic">
+			<img src="https://picsum.photos/300/200?random=10">
+		</div>
+		<div class="text">
+			<h3>金魚都能懂的網頁入門</h3>
+			<p>一個針對網頁新手規劃的網頁入門免費教學，簡單易懂又不失專業，不僅可以打下清楚的觀念，還能學到學習的方式，可謂一舉兩得啊！還不<a href="https://www.youtube.com/playlist?list=PLqivELodHt3iL9PgGHg0_EF86FwdiqCre">快去學一波！</a></p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="pic">
+			<img src="https://picsum.photos/300/200?random=11">
+		</div>
+		<div class="text">
+			<h3>金魚都能懂的網頁切版</h3>
+			<p>一個針對網頁新手進階學習的網頁切版免費教學，讓你可以學習到多種不同網頁區塊的切板方式，不僅可以看到常見的版面設計，還能學到不同的切版技巧實務，簡直賺爆！<a href="https://www.youtube.com/playlist?list=PLqivELodHt3hxeuLX8PYaI8u1GcDaBoJo">還不訂閱一波！</a></p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="pic">
+			<img src="https://picsum.photos/300/200?random=12">
+		</div>
+		<div class="text">
+			<h3>金魚都能懂的CSS選取器</h3>
+			<p>一個針對網頁新手撰寫的CSS選取器教學書籍，讓你可以用最淺顯易懂的方式學到CSS選取器的各式應用，還能通透原理，簡直爆賺！<a href="https://www.tenlong.com.tw/products/9789864344994?list_name=c-web-design">還不買爆它！</a></p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="pic">
+			<img src="https://picsum.photos/300/200?random=13">
+		</div>
+		<div class="text">
+			<h3>超實務網頁垂直置中30招</h3>
+			<p>史上最全，全球最多，宇宙最齊的CSS垂直置中大全集就在這邊，連W3C看了都要甘拜下風，就在這CSS垂直置中文章中，你如果曾經為了網頁垂直置中而痛苦不堪，甚至夜夜失眠，還為此而跟女/男友分手，那麼你就不得不仔細研讀<a href="https://ithelp.ithome.com.tw/users/20112550/ironman/2092">這個系列文章</a>。跟你掛保證!對男女復合絕對無效。</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="pic">
+			<img src="https://picsum.photos/300/200?random=14">
+		</div>
+		<div class="text">
+			<h3>金魚都能懂的Bootstrap5</h3>
+			<p>完全針對CSS都不懂的朋友設計的一個免費教學，內容淺顯易懂，縱使你完全沒寫過網頁，也能使用Bootstrap完成一個不俗的網頁畫面(圖片醜陋我無法)，心動嗎？<a href="https://www.youtube.com/playlist?list=PLqivELodHt3jq3oWBZfdhMu0GE7774HBW">馬上去看看吧。</a></p>
+		</div>
+	</div>
+</div>
+CSS
+
+/*Demo用的偷懶CSS reset，老手勿戰*/
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.wrap{
+	width: 960px;
+	margin: auto;
+	font-size: 0;
+}
+.wrap .row{
+	padding: 40px 0;
+}
+.wrap .row:not(:first-child){
+	border-top: 1px dotted #666;
+}
+.wrap .row:nth-child(even){
+	direction: rtl;
+}
+.pic,.text{
+	display: inline-block;
+	width: 50%;
+	box-sizing: border-box;
+	padding: 1em;
+	font-size: 16px;
+	vertical-align: middle;
+	direction: ltr;
+}
+.wrap .row:nth-child(even) .text{
+	text-align: right;
+}
+.text h3{
+	font-size: 40px;
+}
+.pic img{
+	width: 100%;
+}
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="row">
+            <div class="pic">
+                <img src="https://picsum.photos/300/200?random=10">
+            </div>
+            <div class="text">
+                <h3>金魚都能懂的網頁入門</h3>
+                <p>一個針對網頁新手規劃的網頁入門免費教學，簡單易懂又不失專業，不僅可以打下清楚的觀念，還能學到學習的方式，可謂一舉兩得啊！還不<a href="https://www.youtube.com/playlist?list=PLqivELodHt3iL9PgGHg0_EF86FwdiqCre">快去學一波！</a></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="pic">
+                <img src="https://picsum.photos/300/200?random=11">
+            </div>
+            <div class="text">
+                <h3>金魚都能懂的網頁切版</h3>
+                <p>一個針對網頁新手進階學習的網頁切版免費教學，讓你可以學習到多種不同網頁區塊的切板方式，不僅可以看到常見的版面設計，還能學到不同的切版技巧實務，簡直賺爆！<a href="https://www.youtube.com/playlist?list=PLqivELodHt3hxeuLX8PYaI8u1GcDaBoJo">還不訂閱一波！</a></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="pic">
+                <img src="https://picsum.photos/300/200?random=12">
+            </div>
+            <div class="text">
+                <h3>金魚都能懂的CSS選取器</h3>
+                <p>一個針對網頁新手撰寫的CSS選取器教學書籍，讓你可以用最淺顯易懂的方式學到CSS選取器的各式應用，還能通透原理，簡直爆賺！<a href="https://www.tenlong.com.tw/products/9789864344994?list_name=c-web-design">還不買爆它！</a></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="pic">
+                <img src="https://picsum.photos/300/200?random=13">
+            </div>
+            <div class="text">
+                <h3>超實務網頁垂直置中30招</h3>
+                <p>史上最全，全球最多，宇宙最齊的CSS垂直置中大全集就在這邊，連W3C看了都要甘拜下風，就在這CSS垂直置中文章中，你如果曾經為了網頁垂直置中而痛苦不堪，甚至夜夜失眠，還為此而跟女/男友分手，那麼你就不得不仔細研讀<a href="https://ithelp.ithome.com.tw/users/20112550/ironman/2092">這個系列文章</a>。跟你掛保證!對男女復合絕對無效。</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="pic">
+                <img src="https://picsum.photos/300/200?random=14">
+            </div>
+            <div class="text">
+                <h3>金魚都能懂的Bootstrap5</h3>
+                <p>完全針對CSS都不懂的朋友設計的一個免費教學，內容淺顯易懂，縱使你完全沒寫過網頁，也能使用Bootstrap完成一個不俗的網頁畫面(圖片醜陋我無法)，心動嗎？<a href="https://www.youtube.com/playlist?list=PLqivELodHt3jq3oWBZfdhMu0GE7774HBW">馬上去看看吧。</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
